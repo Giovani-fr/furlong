@@ -14,6 +14,10 @@ class FurlongTest < MiniTest::Unit::TestCase
 		km = Furlong.new.miles_to_kilometers(26.219)
 		assert_in_delta 42.194, km, 0.01
 	end
+	
+	def test_furlong_to_km
+		km = Furlong.new.furlong_to_kilometers(5)
+	end
 
 end
 
